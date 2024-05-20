@@ -5,6 +5,7 @@ PORT = 5000  # Porta que o Servidor esta usando (identifica qual a aplicacao)
 # Cria o socket do cliente
 conexao_tcp = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 destino = (HOST, PORT)  # Forma a tupla de host, porta
+
 conexao_tcp.connect(destino)  # Estabelece a conexao
 
 estaLogado = False
