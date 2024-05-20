@@ -12,6 +12,7 @@ estaLogado = False
 usuarioEncerrouOChat = False
 codigo=""
 
+# gerenciado a leitura do arquivo
 with open("dados.txt", "r") as bancoDeDados:
     codigo= bancoDeDados.readline()
 
@@ -20,7 +21,7 @@ print(f'\033[1;34m>>> Aguardando Conexão\033[0;0m')
 while True:
     conexao, cliente = tcp.accept() # Aceita conexao do cliente
     print(f'\033[1;36m Concetado por\033[0;0m \033[1;35m {cliente} \033[0;0m')
-    
+
     while True:
 #------- inicio do protocolo --------------
 
