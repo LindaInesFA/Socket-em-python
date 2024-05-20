@@ -1,5 +1,5 @@
 import socket
-ll
+
 HOST = '127.0.0.1'  # Endereco IP do Servidor (loopback)
 PORT = 5000  # Porta que o Servidor esta usando (identifica qual a aplicacao)
 # Cria o socket do cliente
@@ -36,4 +36,3 @@ while True:
 # ---------------- fim do protocolo --------------
 
 conexao_tcp.close()  # fecha a conexao com o servidor
-
